@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/ember/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "baseUrl": ".",
+    "paths": {
+      "@3dlayermaker/device-controller-frontend/tests/*": ["tests/*"],
+      "@3dlayermaker/device-controller-frontend/*": ["app/*"],
+      "@3dlayermaker/common/*": ["../../packages/@3dlayermaker-common/src/*"],
+      "@3dlayermaker/printers/*": ["../../packages/@3dlayermaker-printers/addon/*"],
+      "*": ["types/*"]
+    }
+  },
+  "include": ["app/**/*", "tests/**/*", "types/**/*"],
+  "glint": {
+    "environment": ["ember-loose", "ember-template-imports"]
+  }
+}

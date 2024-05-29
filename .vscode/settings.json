@@ -1,0 +1,14 @@
+{
+  "search.exclude": {
+    "**/dist/*": true,
+    "**/project/*": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "glimmer-ts", "glimmer-js"],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "glint.libraryPath": "apps/frontend",
+  "glint.debug": false
+}

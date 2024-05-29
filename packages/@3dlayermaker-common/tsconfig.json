@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "skipLibCheck": true, // @see https://github.com/typed-ember/ember-cli-typescript/issues/1502
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es2018",
+    "lib": ["es2018", "dom", "dom.iterable"],
+    "esModuleInterop": true,
+    "declarationMap": true /* take me to declaration instead of compiled file */
+  },
+  "include": ["src/**/*"]
+}

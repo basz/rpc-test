@@ -1,0 +1,35 @@
+{
+  "name": "@3dlayermaker/device-controller",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "concurrently --kill-others 'cd apps/frontend && pnpm run start' 'cd packages/@3dlayermaker-common && pnpm run start:dev'",
+    "deploy": "turbo run deploy",
+    "deploy:dev": "turbo run deploy:dev",
+    "assemble": "turbo run assemble",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "pnpm --filter '*' lint:fix",
+    "test": "turbo run test",
+    "release": "turbo run assemble && pnpm --filter \"@3dlayermaker/orchestration\" run release"
+  },
+  "devDependencies": {
+    "@babel/core": "7.24.6",
+    "@babel/plugin-proposal-decorators": "7.24.6",
+    "@glint/core": "1.4.0",
+    "@glint/template": "1.4.0",
+    "concurrently": "8.2.2",
+    "dotenv": "16.4.5",
+    "turbo": "1.13.3",
+    "typescript": "5.4.5",
+    "rimraf": "5.0.7"
+  },
+  "resolutions": {
+    "nan": "2.19.0",
+    "@pokusew/pcscliteXXX": "github:pokusew/node-pcsclite#c3c3cf33efea0973e0882eac268427112eb84352"
+  },
+  "engines": {
+    "node": ">= 18.*"
+  },
+  "packageManager": "pnpm@8.15.8"
+}

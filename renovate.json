@@ -1,0 +1,58 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":pinAllExceptPeerDependencies",
+    ":disableDigestUpdates"
+  ],
+  "rebaseWhen": "conflicted",
+  "hostRules": [
+    {
+      "hostType": "git-tags",
+      "matchHost": "https://github.com/iSole-3D",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DAQ/9G+oQY3HhImaWhbzbQZpsImJuZ/E4fPTGhFyTKq1HRIIqHeOS7boAiWaG4ng742wzW+25GWtMnXCRkQa9Rb2W120KJcKdAUm9VJ+CMrYR5ZOCK/JtyhHG8W6UkLQ7A9NpfXdQqDGZJzcO6zlRVhVWl89Tl3oJh+R/GT8lEnoOP708YtRbcMY0FeOg+/l4jAoayesjBx1RM8WucThytoLObb4pi7K86Nsdm8O+LpGqhDiVQ0ii6dnRk1L5GN+Dzp8pkZTLs5aJRioEwYY5yWPIWy0OotUjUpSRP7Uqh5l0GGgvnEZ+ClW4KliUToLKH21n+MRgHRmnN5vwmahCTdSaKpFayn4QPVG/n/ViesDSD+YnDgeog51Kh/w/gxbNehMxaZeyJcM277utjnHTP73Mn1r1g3rKZt6E3ZgWfmKN86hK/5L689X8eMWJHlSdSo+nDdbtdcG6D4OsjWIpPiVuRnJstJJTeAtWg/UjLSQbZgTc+bpfDm81Y0yvlZSBXsK/dBVrrVr8viITqNzUtI5H4hKoCJn4uvOOyONE3K/1yPitBlPTdVuoCz8mZfWgspIutiCAta0E17qf5ry+h3G01VACrNljEbkj1SqCQlXPFPEo/3wG2AgRpWlaRx4J0F7uR55Loy/ueJXymvNeYmTHytUvygrWJvqtHw/vzXOjByPSdwF6PmtgMaqE0+eqya/uB1vBsrAxfrqMSrTdCt2+f/+dDyAaJ/3icN/D0pKLvbnbib12YvbXPVTVkvTJ60G7ryitfZ2rQDqbgRPDFCM7qzLKPCer+yzzVNZaOWbHU3WGbtmpLy4KtdCJW9PPQ/SN5ZsXMoK8/Phz"
+      }
+    },
+    {
+      "hostType": "docker-compose",
+      "matchHost": "https://ghcr.io/iSole-3D",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DAQ/9G+oQY3HhImaWhbzbQZpsImJuZ/E4fPTGhFyTKq1HRIIqHeOS7boAiWaG4ng742wzW+25GWtMnXCRkQa9Rb2W120KJcKdAUm9VJ+CMrYR5ZOCK/JtyhHG8W6UkLQ7A9NpfXdQqDGZJzcO6zlRVhVWl89Tl3oJh+R/GT8lEnoOP708YtRbcMY0FeOg+/l4jAoayesjBx1RM8WucThytoLObb4pi7K86Nsdm8O+LpGqhDiVQ0ii6dnRk1L5GN+Dzp8pkZTLs5aJRioEwYY5yWPIWy0OotUjUpSRP7Uqh5l0GGgvnEZ+ClW4KliUToLKH21n+MRgHRmnN5vwmahCTdSaKpFayn4QPVG/n/ViesDSD+YnDgeog51Kh/w/gxbNehMxaZeyJcM277utjnHTP73Mn1r1g3rKZt6E3ZgWfmKN86hK/5L689X8eMWJHlSdSo+nDdbtdcG6D4OsjWIpPiVuRnJstJJTeAtWg/UjLSQbZgTc+bpfDm81Y0yvlZSBXsK/dBVrrVr8viITqNzUtI5H4hKoCJn4uvOOyONE3K/1yPitBlPTdVuoCz8mZfWgspIutiCAta0E17qf5ry+h3G01VACrNljEbkj1SqCQlXPFPEo/3wG2AgRpWlaRx4J0F7uR55Loy/ueJXymvNeYmTHytUvygrWJvqtHw/vzXOjByPSdwF6PmtgMaqE0+eqya/uB1vBsrAxfrqMSrTdCt2+f/+dDyAaJ/3icN/D0pKLvbnbib12YvbXPVTVkvTJ60G7ryitfZ2rQDqbgRPDFCM7qzLKPCer+yzzVNZaOWbHU3WGbtmpLy4KtdCJW9PPQ/SN5ZsXMoK8/Phz"
+      }
+    },
+    {
+      "hostType": "docker",
+      "matchHost": "https://ghcr.io/iSole-3D",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DAQ/9G+oQY3HhImaWhbzbQZpsImJuZ/E4fPTGhFyTKq1HRIIqHeOS7boAiWaG4ng742wzW+25GWtMnXCRkQa9Rb2W120KJcKdAUm9VJ+CMrYR5ZOCK/JtyhHG8W6UkLQ7A9NpfXdQqDGZJzcO6zlRVhVWl89Tl3oJh+R/GT8lEnoOP708YtRbcMY0FeOg+/l4jAoayesjBx1RM8WucThytoLObb4pi7K86Nsdm8O+LpGqhDiVQ0ii6dnRk1L5GN+Dzp8pkZTLs5aJRioEwYY5yWPIWy0OotUjUpSRP7Uqh5l0GGgvnEZ+ClW4KliUToLKH21n+MRgHRmnN5vwmahCTdSaKpFayn4QPVG/n/ViesDSD+YnDgeog51Kh/w/gxbNehMxaZeyJcM277utjnHTP73Mn1r1g3rKZt6E3ZgWfmKN86hK/5L689X8eMWJHlSdSo+nDdbtdcG6D4OsjWIpPiVuRnJstJJTeAtWg/UjLSQbZgTc+bpfDm81Y0yvlZSBXsK/dBVrrVr8viITqNzUtI5H4hKoCJn4uvOOyONE3K/1yPitBlPTdVuoCz8mZfWgspIutiCAta0E17qf5ry+h3G01VACrNljEbkj1SqCQlXPFPEo/3wG2AgRpWlaRx4J0F7uR55Loy/ueJXymvNeYmTHytUvygrWJvqtHw/vzXOjByPSdwF6PmtgMaqE0+eqya/uB1vBsrAxfrqMSrTdCt2+f/+dDyAaJ/3icN/D0pKLvbnbib12YvbXPVTVkvTJ60G7ryitfZ2rQDqbgRPDFCM7qzLKPCer+yzzVNZaOWbHU3WGbtmpLy4KtdCJW9PPQ/SN5ZsXMoK8/Phz"
+      }
+    },
+    {
+      "hostType": "dockerfile",
+      "matchHost": "https://ghcr.io/iSole-3D",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DAQ/9G+oQY3HhImaWhbzbQZpsImJuZ/E4fPTGhFyTKq1HRIIqHeOS7boAiWaG4ng742wzW+25GWtMnXCRkQa9Rb2W120KJcKdAUm9VJ+CMrYR5ZOCK/JtyhHG8W6UkLQ7A9NpfXdQqDGZJzcO6zlRVhVWl89Tl3oJh+R/GT8lEnoOP708YtRbcMY0FeOg+/l4jAoayesjBx1RM8WucThytoLObb4pi7K86Nsdm8O+LpGqhDiVQ0ii6dnRk1L5GN+Dzp8pkZTLs5aJRioEwYY5yWPIWy0OotUjUpSRP7Uqh5l0GGgvnEZ+ClW4KliUToLKH21n+MRgHRmnN5vwmahCTdSaKpFayn4QPVG/n/ViesDSD+YnDgeog51Kh/w/gxbNehMxaZeyJcM277utjnHTP73Mn1r1g3rKZt6E3ZgWfmKN86hK/5L689X8eMWJHlSdSo+nDdbtdcG6D4OsjWIpPiVuRnJstJJTeAtWg/UjLSQbZgTc+bpfDm81Y0yvlZSBXsK/dBVrrVr8viITqNzUtI5H4hKoCJn4uvOOyONE3K/1yPitBlPTdVuoCz8mZfWgspIutiCAta0E17qf5ry+h3G01VACrNljEbkj1SqCQlXPFPEo/3wG2AgRpWlaRx4J0F7uR55Loy/ueJXymvNeYmTHytUvygrWJvqtHw/vzXOjByPSdwF6PmtgMaqE0+eqya/uB1vBsrAxfrqMSrTdCt2+f/+dDyAaJ/3icN/D0pKLvbnbib12YvbXPVTVkvTJ60G7ryitfZ2rQDqbgRPDFCM7qzLKPCer+yzzVNZaOWbHU3WGbtmpLy4KtdCJW9PPQ/SN5ZsXMoK8/Phz"
+      }
+    }
+  ],
+  "ignorePaths": [
+    "orchestration/device-controller/container-controller/Dockerfile.template"
+  ],
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "packageNames": ["three", "@types/three"],
+      "managers": ["npm"],
+      "enabled": false
+    }
+  ]
+}

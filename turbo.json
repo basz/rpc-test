@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "deploy": {
+      "dependsOn": ["build", "assemble"]
+    },
+    "assemble": {
+      "dependsOn": ["build", "^assemble"],
+      "inputs": [
+        "client/**",
+        "dist/**",
+        "container-controller/project/**",
+        "container-nfc-reader/**"
+      ]
+    },
+    "build": {
+      "dependsOn": ["test", "lint", "^build"],
+      "outputs": ["dist/**"]
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "outputs": []
+    },
+    "dev": {
+      "cache": true
+    }
+  }
+}
